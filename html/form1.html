@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+    <title>Understanding Form Elements</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <fieldset style="width: 500px;">
+            <legend>Personal Detail</legend>
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname"
+        placeholder="Enter your First Name" 
+        pattern="^[A-Za-z]{0,49}$" 
+           title="First name should only contain letters and must be 1-50 characters long." 
+           required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age"
+        placeholder="Enter your age"
+        min="18" max="25"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass"><br><br>
+
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" placeholder="Enter DOB Here"><br><br>
+
+        <label>Time:</label>
+        <input type="time"><br><br>
+
+        <label>URL:</label>
+        <input type="url"><br><br>
+
+        <label>Select Your Skills:</label>
+        <input type="checkbox" value="Java">Java Programming
+        <input type="checkbox" value="Python">Python
+        <input type="checkbox" value="NoSQL">MongoDB
+        <input type="checkbox" value="MERN">Nodejs
+
+        
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="Other">Other
+
+        <br><br>
+        <label>Select Volume:</label>
+        <input type="range">
+
+        <br><br>
+        <label>Select Colour:</label>
+        <input type="color">
+
+        <br><br>
+        <label>Upload Your Files:</label>
+        <input type="file" accept=".jpg, .png, .pdf">
+
+        <br><br>
+        <label for="city">Select your City:</label>
+        <select id="city">
+            <option>Select</option>
+            <option value="Pun">Pune</option>
+            <option value="Ben">Bengaluru</option>
+            <option value="Nag">Nagpur</option>
+        </select>
+        <br><br>
+
+        <textarea>Write Your Feedback Here...!!</textarea>
+
+        <br><br>
+        <button type="submit">Click Here to Submit</button>
+    </fieldset>
+    </form>
+ 
+</body>
+</html>
